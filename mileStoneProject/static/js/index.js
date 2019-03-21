@@ -6,6 +6,10 @@ function makeGraphs(error, housingData) {
     var ndx = crossfilter(housingData);
     
     housingData.forEach(function(d){
+        var str = "12,345,678.90";
+        str = str + '';
+        str = str.replace(/,/g, " ");
+        parseInt(str, 10);
         d.carbonEmissions = parseInt(d.carbonEmissions);
     });
     
