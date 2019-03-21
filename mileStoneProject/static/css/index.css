@@ -1,0 +1,69 @@
+.flex,
+.flex-stack {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.flex-stack {
+  flex-direction: column;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #3A3838;
+  shape-rendering: auto;
+}
+ 
+/*.bar {
+  fill: steelblue;
+}*/
+ 
+.x.axis path {
+  display: none;
+}
+
+.inner-1 {
+      margin: 10px 80px 50px 50px;
+    /*padding-left: 20px;*/
+    /*padding-right: 30px;*/
+    /*border: 3px solid #73AD21;*/
+}
+
+.inner-2 {
+      margin: 10px 80px 50px 50px;
+    /*padding-left: 20px;*/
+    /*padding-right: 30px;*/
+    /*border: 3px solid #73AD21;*/
+}
+
+.inner-3 {
+    margin: 10px 200px 10px 50px;
+    /*padding-left: 20px;*/
+    padding-right: 100px;
+    /*border: 2px solid #73AD21;*/
+}
+
+/*Background Color Gradient*/
+body {
+  background: #e2d1c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #fdfcfb , #e2d1c3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fdfcfb, #e2d1c3); /*IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1,
+h2,
+h3 {
+  font-size: 2rem;
+  color: red;
+}
+
+.container {
+  position: relative;
+  margin-top: 5px;
+}
+
+
+
+
