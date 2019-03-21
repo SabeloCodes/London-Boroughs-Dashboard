@@ -12,10 +12,12 @@ function makeGraphs(error, housingData) {
         parseInt(str, 10);
         d.carbonEmissions = parseInt(d.carbonEmissions);
         d.cars = parseInt(d.cars);
+        d.population = parseInt(d.population);
     });
     
     show_emissions_per_borough(ndx);
     show_cars_per_borough(ndx);
+    show_average_population(ndx);
     
     dc.renderAll();
 }
@@ -37,7 +39,6 @@ function show_emissions_per_borough(ndx) {
             .xAxisLabel("Borough")
             .yAxisLabel("Emissions")
             .yAxis().ticks(40);
-
 };
 
 
@@ -57,8 +58,62 @@ function show_cars_per_borough(ndx) {
             .xAxisLabel("Borough")
             .yAxisLabel("Cars")
             .yAxis().ticks(40);
-
 };
+
+
+// Average Population Per Location:
+function show_average_population(ndx) {
+    var location_dim = ndx.dimension(dc.pluck('location'));
+
+    // Add data entry
+    function add_item(p, v) {
+        p.count++;
+        p.total += v.population;
+        p.average = p.total / p.count;
+        return p;
+    }
+
+    // Remove data entry
+    function remove_item(p, v) {
+        p.count--;
+        if(p.count == 0) {
+            p.total = 0;
+            p.average = 0;
+        } else {
+            p.total -= v.population;
+            p.average = p.total / p.count;
+        }
+        return p;
+    }
+
+    // Initialise the values
+    function initialise() {
+        return {count: 0, total: 0, average: 0};
+    }
+    
+
+// Chart for Average Population
+    var populationByLocationGroup = location_dim.group().reduce(add_item, remove_item, initialise);
+
+        dc.barChart("#average-population")
+        .width(400)
+        .height(250)
+        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .barPadding(0.1)
+        .outerPadding(0.1)
+        .dimension(location_dim)
+        .group(populationByLocationGroup)
+        .valueAccessor(function(d){
+            return d.value.average.toFixed(3)
+        })
+        .transitionDuration(600)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .xAxisLabel("Inner/Outer")
+        .yAxisLabel("Population")
+        .yAxis().ticks(10).tickFormat(d3.format(',3s'));
+}
 
 
 
