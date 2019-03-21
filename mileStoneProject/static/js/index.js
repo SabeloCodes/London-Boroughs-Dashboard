@@ -11,9 +11,11 @@ function makeGraphs(error, housingData) {
         str = str.replace(/,/g, " ");
         parseInt(str, 10);
         d.carbonEmissions = parseInt(d.carbonEmissions);
+        d.cars = parseInt(d.cars);
     });
     
     show_emissions_per_borough(ndx);
+    show_cars_per_borough(ndx);
     
     dc.renderAll();
 }
@@ -37,6 +39,27 @@ function show_emissions_per_borough(ndx) {
             .yAxis().ticks(40);
 
 };
+
+
+// Chart Cars Per Borough:
+function show_cars_per_borough(ndx) {
+        var borough_dim = ndx.dimension(dc.pluck('borough'));
+        var borough_cars_group = borough_dim.group().reduceSum(dc.pluck('cars'));
+        dc.barChart('#cars-borough')
+            .width(400)
+            .height(250)
+            .margins({top: 10, right: 50, bottom: 30, left: 50})
+            .dimension(borough_dim)
+            .group(borough_cars_group)
+            .transitionDuration(600)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal)
+            .xAxisLabel("Borough")
+            .yAxisLabel("Cars")
+            .yAxis().ticks(40);
+
+};
+
 
 
 
