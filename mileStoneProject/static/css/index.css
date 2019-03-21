@@ -45,6 +45,13 @@
     /*border: 2px solid #73AD21;*/
 }
 
+.inner-4 {
+    margin: 10px 200px 10px 50px;
+    /*padding-left: 20px;*/
+    padding-right: 100px;
+    /*border: 2px solid #73AD21;*/
+}
+
 /*Background Color Gradient*/
 body {
   background: #e2d1c3;  /* fallback for old browsers */

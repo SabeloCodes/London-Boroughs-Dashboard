@@ -19,6 +19,9 @@ function makeGraphs(error, housingData) {
     show_cars_per_borough(ndx);
     show_average_population(ndx);
     
+    // Scatter plot
+    show_population_emissions_correlation(ndx);
+    
     dc.renderAll();
 }
 
@@ -39,7 +42,7 @@ function show_emissions_per_borough(ndx) {
             .xAxisLabel("Borough")
             .yAxisLabel("Emissions")
             .yAxis().ticks(40);
-};
+}
 
 
 // Chart Cars Per Borough:
@@ -58,7 +61,7 @@ function show_cars_per_borough(ndx) {
             .xAxisLabel("Borough")
             .yAxisLabel("Cars")
             .yAxis().ticks(40);
-};
+}
 
 
 // Average Population Per Location:
@@ -114,6 +117,38 @@ function show_average_population(ndx) {
         .yAxisLabel("Population")
         .yAxis().ticks(10).tickFormat(d3.format(',3s'));
 }
+
+
+// Population Emissions Correlation:
+function show_population_emissions_correlation(ndx) {
+    var emissions_dim = ndx.dimension(dc.pluck("carbonEmissions"));
+    var pollution_dim = ndx.dimension(function(d) {
+    return [d.carbonEmissions, d.population];
+    });
+
+     var emissionsPollutionGroup = pollution_dim.group();
+
+    var minEmissions = emissions_dim.bottom(1)[0].carbonEmissions;
+    var maxEmissions = emissions_dim.top(1)[0].carbonEmissions;
+
+        dc.scatterPlot("#population-emissions")
+        .width(800)
+        .height(400)
+        .x(d3.scale.linear().domain([minEmissions, maxEmissions]))
+        .brushOn(false)
+        .symbolSize(35)
+        .clipPadding(10)
+        .yAxisLabel("Population")
+        .xAxisLabel("Emissions")
+        .title(function(d) {
+            return d.key[2] + " pollutes " + d.key[1];
+        })
+        .dimension(pollution_dim)
+        .group(emissionsPollutionGroup)
+        .margins({top: 10, right: 50, bottom: 75, left: 75});
+}
+
+
 
 
 
