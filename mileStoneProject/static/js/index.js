@@ -121,12 +121,13 @@ function show_average_population(ndx) {
 
 // Population Emissions Correlation:
 function show_population_emissions_correlation(ndx) {
+    
     var emissions_dim = ndx.dimension(dc.pluck("carbonEmissions"));
     var pollution_dim = ndx.dimension(function(d) {
-    return [d.carbonEmissions, d.population];
+    return [d.carbonEmissions, d.population, d.borough];
     });
 
-     var emissionsPollutionGroup = pollution_dim.group();
+    var emissionsPollutionGroup = pollution_dim.group();
 
     var minEmissions = emissions_dim.bottom(1)[0].carbonEmissions;
     var maxEmissions = emissions_dim.top(1)[0].carbonEmissions;
@@ -136,12 +137,13 @@ function show_population_emissions_correlation(ndx) {
         .height(400)
         .x(d3.scale.linear().domain([minEmissions, maxEmissions]))
         .brushOn(false)
-        .symbolSize(35)
+        .symbolSize(8)
         .clipPadding(10)
+        .elasticY(false)
         .yAxisLabel("Population")
         .xAxisLabel("Emissions")
         .title(function(d) {
-            return d.key[2] + " pollutes " + d.key[1];
+            return d.key[2] + " pollute " + d.key[1] + " people";
         })
         .dimension(pollution_dim)
         .group(emissionsPollutionGroup)
