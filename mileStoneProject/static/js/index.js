@@ -31,7 +31,7 @@ function show_emissions_per_borough(ndx) {
         var borough_dim = ndx.dimension(dc.pluck('borough'));
         var borough_emissions_group = borough_dim.group().reduceSum(dc.pluck('carbonEmissions'));
         dc.barChart('#emissions-borough')
-            .width(400)
+            .width(800)
             .height(250)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
             .dimension(borough_dim)
@@ -50,7 +50,7 @@ function show_cars_per_borough(ndx) {
         var borough_dim = ndx.dimension(dc.pluck('borough'));
         var borough_cars_group = borough_dim.group().reduceSum(dc.pluck('cars'));
         dc.barChart('#cars-borough')
-            .width(400)
+            .width(800)
             .height(250)
             .margins({top: 10, right: 50, bottom: 30, left: 50})
             .dimension(borough_dim)
@@ -133,7 +133,7 @@ function show_population_emissions_correlation(ndx) {
     var maxEmissions = emissions_dim.top(1)[0].carbonEmissions;
 
         dc.scatterPlot("#population-emissions")
-        .width(800)
+        .width(1000)
         .height(400)
         .x(d3.scale.linear().domain([minEmissions, maxEmissions]))
         .brushOn(false)
