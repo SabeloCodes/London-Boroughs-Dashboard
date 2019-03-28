@@ -1,56 +1,63 @@
-.flex,
-.flex-stack {
-  display: flex;
-  flex: 1;
-  align-items: flex-start;
+
+@media(min-width:900px){
+  .container{
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      flex-wrap:wrap;
+  }
+  .container-1 {
+      margin: 40px auto 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+ }
+
+  .container-2 {
+      margin: 40px auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+ }
 }
 
-.flex-stack {
-  flex-direction: column;
+.flex-chart-1, .flex-chart-2{
+    box-sizing: border-box;
+    border:0px #ccc solid;
+    padding:5px;
+    margin-bottom: 20px;
+    flex-basis: 50%;
 }
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #3A3838;
-  shape-rendering: auto;
-}
- 
-/*.bar {
-  fill: steelblue;
-}*/
- 
-.x.axis path {
-  display: none;
+.flex-chart-3, .flex-chart-4{
+    box-sizing: border-box;
+    border:0px #ccc solid;
+    padding:20px;
+    margin-bottom: 20px;
 }
 
-.inner-1 {
-      margin: 10px 80px 50px 50px;
-    /*padding-left: 20px;*/
-    /*padding-right: 30px;*/
-    /*border: 3px solid #73AD21;*/
+.flex-chart-1{
+    flex:1;
+    order:1;
+    flex-basis: 50%;
 }
 
-.inner-2 {
-      margin: 10px 80px 50px 50px;
-    /*padding-left: 20px;*/
-    /*padding-right: 30px;*/
-    /*border: 3px solid #73AD21;*/
+.flex-chart-2{
+    flex:1;
+    order:2;
+    flex-basis: 50%;
 }
 
-.inner-3 {
-    margin: 10px 200px 10px 50px;
-    /*padding-left: 20px;*/
-    padding-right: 100px;
-    /*border: 2px solid #73AD21;*/
+.flex-chart-3{
+    flex:1;
+    order:1;
 }
 
-.inner-4 {
-    margin: 10px 200px 10px 50px;
-    /*padding-left: 20px;*/
-    padding-right: 100px;
-    /*border: 2px solid #73AD21;*/
+.flex-chart-4{
+    flex:2;
+    order:2;
 }
+
 
 /*Background Color Gradient*/
 body {
@@ -59,17 +66,20 @@ body {
   background: linear-gradient(to bottom, #fdfcfb, #e2d1c3); /*IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-h1,
-h2,
-h3 {
+
+h1{
   font-size: 2rem;
-  color: red;
+  color: #928296;
+  text-align: center;
 }
 
-.container {
-  position: relative;
-  margin-top: 5px;
+h2,
+h3 {
+  font-size: 1.5rem;
+  color: #928296;
 }
+
+
 
 
 
