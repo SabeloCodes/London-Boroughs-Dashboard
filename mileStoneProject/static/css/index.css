@@ -1,4 +1,8 @@
 
+body{
+    font-family: 'Archivo', sans-serif;
+}
+
 @media(min-width:900px){
   .container{
       display: flex;
@@ -76,8 +80,29 @@ h1{
 h2,
 h3 {
   font-size: 1.5rem;
+  font-weight: 400;
   color: #928296;
+  text-align: center;
 }
+
+.dc-chart .axis line, .dc-chart .axis path {
+    fill: none;
+    stroke: #93A68F;
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+}
+
+
+.flex-chart-1 .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-45deg);
+}
+
+.flex-chart-2 .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-45deg);
+}
+
 
 
 

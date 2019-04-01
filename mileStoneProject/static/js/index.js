@@ -32,8 +32,8 @@ function show_emissions_per_borough(ndx) {
     var borough_emissions_group = borough_dim.group().reduceSum(dc.pluck('carbonEmissions'));
     dc.barChart('#emissions-borough')
         .width(600)
-        .height(350)
-        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .height(450)
+        .margins({top: 30, right: 50, bottom: 120, left: 50})
         .dimension(borough_dim)
         .group(borough_emissions_group)
         .transitionDuration(600)
@@ -51,8 +51,8 @@ function show_cars_per_borough(ndx) {
     var borough_cars_group = borough_dim.group().reduceSum(dc.pluck('cars'));
     dc.barChart('#cars-borough')
         .width(600)
-        .height(350)
-        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .height(450)
+        .margins({top: 30, right: 50, bottom: 120, left: 50})
         .dimension(borough_dim)
         .group(borough_cars_group)
         .transitionDuration(600)
@@ -150,7 +150,7 @@ function show_population_emissions_correlation(ndx) {
             return d.key[2] + " pollute " + d.key[1] + " people";
         })
         .dimension(pollution_dim)
-        .group(emissionsPollutionGroup)
+        .group(emissionsPollutionGroup);
         
 }
 
