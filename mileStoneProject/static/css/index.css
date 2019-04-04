@@ -69,7 +69,10 @@ body{
 }
 
 .title {
-    
+    padding:5px;
+    margin: 15px 25px 25px 25px;
+    border-radius: 15px 15px 15px 15px;
+    background-color:  rgba(233, 128, 116,0.1);
 }
 
 
