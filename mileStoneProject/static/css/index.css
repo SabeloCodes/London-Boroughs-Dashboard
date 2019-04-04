@@ -29,50 +29,46 @@ body{
 
 .flex-chart-1 {
     box-sizing: border-box;
-    /*border:0px #ccc solid;*/
+    border: 1px rgba(233, 128, 116,0.1) solid;
     padding:5px;
     margin: 30px 50px 50px 80px;
     border-radius: 15px 15px 15px 15px;
-    background-color:  rgba(233, 128, 116,0.1);
+    background-color: rgba(233, 128, 116,0.1);
 } 
-
 
 .flex-chart-2 {
     box-sizing: border-box;
-    /*border:0px #ccc solid;*/
+    border: 1px rgba(233, 128, 116,0.1) solid;
     padding:5px;
     margin: 30px 50px 50px 80px;
     border-radius: 15px 15px 15px 15px;
-    background-color:  rgba(233, 128, 116,0.1);
+    background-color: rgba(233, 128, 116,0.1);
 }
 
 .flex-chart-3 {
     box-sizing: border-box;
-    /*border:0px #ccc solid;*/
+    border: 1px rgba(233, 128, 116,0.1) solid;
     padding:20px;
     margin: 30px 50px 50px 50px;
     border-radius: 15px 15px 15px 15px;
-    background-color:  rgba(233, 128, 116,0.1);
+    background-color: rgba(233, 128, 116,0.1);
 }
 
 .flex-chart-4 {
     box-sizing: border-box;
-    /*border:0px #ccc solid;*/
+    border: 1px rgba(233, 128, 116,0.1) solid;
     padding:20px;
     margin: 30px 50px 50px 50px;
     border-radius: 15px 15px 15px 15px;
-    background-color:  rgba(233, 128, 116,0.1);
-}
-
-.flex-chart-1 :hover {
-    box-shadow: 0 0 5px 2px rgba(232, 90, 79,0.4);
+    background-color: rgba(233, 128, 116,0.1);
 }
 
 .title {
     padding:5px;
     margin: 15px 25px 25px 25px;
-    border-radius: 15px 15px 15px 15px;
-    background-color:  rgba(233, 128, 116,0.1);
+    border-radius: 8px 8px 8px 8px;
+    background-color:  rgba(233, 128, 116,0.2);
+    box-shadow: 0 0 0 1px rgb(233, 128, 116, 0.3);
 }
 
 
