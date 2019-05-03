@@ -22,16 +22,8 @@ body {
 	}
 }
 
-.flex-chart-1 {
-	box-sizing: border-box;
-	border: 1px rgba(233, 128, 116, 0.1) solid;
-	padding: 5px;
-	margin: 30px 50px 50px 80px;
-	border-radius: 15px 15px 15px 15px;
-	background-color: rgba(233, 128, 116, 0.1);
-}
-
-.flex-chart-2 {
+.flex-chart-1, 
+.flex-chart-2  {
 	box-sizing: border-box;
 	border: 1px rgba(233, 128, 116, 0.1) solid;
 	padding: 5px;
