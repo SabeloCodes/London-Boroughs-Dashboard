@@ -167,7 +167,7 @@ function show_population_emissions_correlation(ndx) {
 		.yAxisLabel("Population")
 		.xAxisLabel("Emissions")
 		.title(function (d) {
-			return d.key[2] + " pollute " + d.key[1] + " people";
+			return d.key[2] + " pollutes " + d.key[1] + " people";
 		})
 		.dimension(pollution_dim)
 		.group(emissionsPollutionGroup);
