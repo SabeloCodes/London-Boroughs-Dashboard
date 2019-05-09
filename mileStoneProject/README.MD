@@ -52,7 +52,7 @@ how much emissions are polluting the air in a particular borough.
 **Features left to implement**
 * A heat-map display of the most polluted parts of London would make great visualisation. spend on the map itself, but due to the potential scale of data sets is particularly difficult to implement.
 
-**Technologies Used**
+**Technologies Used**<br>
 _HTML5_
 * Providing basic site structure.
 
@@ -76,7 +76,7 @@ and the changes would be reciprocated on the dashboard.Finally these charts use 
 be mobile responsive. D3.js is designed for desktop or large-screen viewing. However I have tried to make it as mobile 
 friendly as i could as you can see in the CSS file and using the bootstrap grid system in my index.html file.
 
-**Browser Compatibility**
+**Browser Compatibility**<br>
 _Site viewed and tested in the following browsers:_
 * Opera
 * Mozilla Firefox
@@ -86,7 +86,7 @@ _Site viewed and tested in the following browsers:_
 **Responsive Testing**
 Used Chrome Dev Tools to imitate different devices and widths. No errors were found.
 
-**Deployment**
+**Deployment**<br>
 _Github Deployment_
 * Git repository initiated using the git init command onto the terminal.
 * Added amended files to the staging area using git add 
@@ -95,7 +95,7 @@ _Github Deployment_
 .git remote add origin https://github.com/SabeloCodes/London-Boroughs-Dashboard.git 
 followed by .git push -u origin master
 
-**Credits**
+**Credits**<br>
 _Content_
 This is where all my data came from: [.gov.uk](https://www.gov.uk/government/statistical-data-sets) 
 
