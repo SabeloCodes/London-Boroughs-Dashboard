@@ -29,7 +29,7 @@ to work by bicycle and his wife drives a car to work in the centre of London.
 
 
 **Wireframe**
-* Please find the wireframe sketch [here:](href="mileStoneProject/README.MD") 
+* Please find the wireframe sketch [here:](mileStoneProject/README.MD) 
 * The dashboard is responsive to an extent but not developed for mobile use. 
 
 **Look & Style**
@@ -96,6 +96,6 @@ _Github Deployment_
 followed by .git push -u origin master
 
 **Credits**<br>
-_Content_
+_Content_<br>
 This is where all my data came from: [.gov.uk](https://www.gov.uk/government/statistical-data-sets) 
 
