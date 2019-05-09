@@ -77,7 +77,7 @@ be mobile responsive. D3.js is designed for desktop or large-screen viewing. How
 friendly as i could as you can see in the CSS file and using the bootstrap grid system in my index.html file.</p>
 
 <h3>Browser Compatibility</h3><br>
-Site viewed and tested in the following browsers:
+Site viewed and tested in the following browsers:<br>
 * Opera
 * Mozilla Firefox
 * Google Chrome
@@ -87,7 +87,7 @@ Site viewed and tested in the following browsers:
 Used Chrome Dev Tools to imitate different devices and widths. No errors were found.
 
 <h3>Deployment</h3>
-Github Deployment
+Github Deployment<br>
 * Git repository initiated using the git init command onto the terminal.
 * Added amended files to the staging area using git add 
 * Commited files with this command git commit -m "Initial commit"
