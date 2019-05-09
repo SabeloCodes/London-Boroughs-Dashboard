@@ -1,6 +1,6 @@
 <h2>Milestone Project II – Data Visualisation</h2><br>
-<h3>Dashboard</h3><br>
-<h4>Interactive Frontend Development</h4><br>
+<h3>Dashboard</h3>
+<h4>Interactive Frontend Development</h4>
 
 <p>This is a data visualization project to analyse and compare different relationships within 
 the inner London and outer London housing dataset. Taking to consideration all of London’s 32 boroughs, 
