@@ -1,5 +1,5 @@
 <h2>Milestone Project II – Data Visualisation</h2><br>
-<h3>Dashboard</h3>
+_Dashboard_
 <h4>Interactive Frontend Development</h4>
 
 This is a data visualization project to analyse and compare different relationships within 
@@ -7,14 +7,14 @@ the inner London and outer London housing dataset. Taking to consideration all o
 this dynamic dashboard illustrates interesting results regarding air-pollution, population, car ownership, 
 etc. All of this is done through associations in data pairings.
 
-<h3>UX</h3>
+_UX_
 Using the latest dataset sourced from [.gov.uk](https://www.gov.uk/government/statistical-data-sets) a user can 
 find out information relating to the city of London. The user is a typical Londoner with an interest in a 
 sustainable lifestyle for themselves and others. Commuting to work using public transportation, having access 
 to a section of the city but curious about other parts of the city too. Anything from knowing which borough is 
 the most populated, which is the largest in surface area and the correlation between car numbers and emissions.
 
-<h3>Objectives:</h3>
+_Objectives:_
 * I am looking for an easy to use visual display of data with charts or graphs.
 * An interactive display with filters that can be filtered according to location. 
 * I commute into work by bicycle so would like to find out about the level of emissions and the number of cars.
@@ -23,21 +23,21 @@ Target Audience
 * From those concerned about the environment and the impact of carbon emissions to our lives, to those merely 
 interested in city life and its pros and cons.
 
-<h3>User Stories</h3>
+_User Stories_
 * User 1 has recently settled in London with his family. Kids cycle to school, play in local parks and he commutes 
 to work by bicycle and his wife drives a car to work in the centre of London.  
 
 
-<h3>Wireframe</h3>
+_Wireframe_
 * Please find the wireframe sketch here: 
 * The dashboard is responsive to an extent but not developed for mobile use. 
 
-<h3>Look & Style</h3>
+_Look & Style_
 * The dashboard has a clean and simplified look. All charts clearly marked and coloured. It should use plain sans-serif 
 fonts on a plain white background. Bright block colours should be used to differentiate data.
 * It should look functional and appeal to people who have a job to get done.
 
-<h3>Features</h3>
+_Features_
 The project has 5 parts divided into 4 charts and one scatterplot:
 * The dashboard features graphs and charts for visualising the housing data.
 * An interactive dashboard for isolating or filtering specific data and visualise exclusively. 
@@ -49,14 +49,14 @@ population between the two by calculating the average.
 hovers over any of the dots, the user learns just how many people each borough pollutes. Also the scatter plot displays 
 how much emissions are polluting the air in a particular borough. 
 
-<h3>Features left to implement</h3>
+_Features left to implement_
 * A heat-map display of the most polluted parts of London would make great visualisation. spend on the map itself, but due to the potential scale of data sets is particularly difficult to implement.
 
-<h3>Technologies Used</h3>
-<b>HTML5</b>
+_Technologies Used_
+_HTML5_
 * Providing basic site structure.
 
-<b>CSS</b>
+_CSS_
 * Provides styling for the page and all content.
 
 <b>JavaScript</b>
