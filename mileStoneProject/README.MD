@@ -8,7 +8,7 @@ this dynamic dashboard illustrates interesting results regarding air-pollution, 
 etc. All of this is done through associations in data pairings.
 
 **UX**
-Using the latest dataset sourced from [.gov.uk](https://www.gov.uk/government/statistical-data-sets) a user can 
+* Using the latest dataset sourced from [.gov.uk](https://www.gov.uk/government/statistical-data-sets) a user can 
 find out information relating to the city of London. The user is a typical Londoner with an interest in a 
 sustainable lifestyle for themselves and others. Commuting to work using public transportation, having access 
 to a section of the city but curious about other parts of the city too. Anything from knowing which borough is 
@@ -29,7 +29,7 @@ to work by bicycle and his wife drives a car to work in the centre of London.
 
 
 **Wireframe**
-* Please find the wireframe sketch here: 
+* Please find the wireframe sketch [here:](href="mileStoneProject/README.MD") 
 * The dashboard is responsive to an extent but not developed for mobile use. 
 
 **Look & Style**
@@ -37,7 +37,7 @@ to work by bicycle and his wife drives a car to work in the centre of London.
 fonts on a plain white background. Bright block colours should be used to differentiate data.
 * It should look functional and appeal to people who have a job to get done.
 
-**Features**
+**Features**<br>
 _The project has 5 parts divided into 4 charts and one scatterplot:_
 * The dashboard features graphs and charts for visualising the housing data.
 * An interactive dashboard for isolating or filtering specific data and visualise exclusively. 
