@@ -1,7 +1,14 @@
-Milestone Project II – Data Visualisation
-Dashboard
-Interactive Frontend Development
-This is a data visualization project to analyse and compare different relationships within the inner London and outer London housing dataset. Taking to consideration all of London’s 32 boroughs, this dynamic dashboard illustrates interesting results regarding air-pollution, population, car ownership, etc. All of this is done through associations in data pairings. 
+<h2>Milestone Project II – Data Visualisation</h2><br>
+
+<h3>Dashboard</h3><br>
+
+<h4>Interactive Frontend Development</h4><br>
+
+<p>This is a data visualization project to analyse and compare different relationships within 
+the inner London and outer London housing dataset. Taking to consideration all of London’s 32 boroughs, 
+this dynamic dashboard illustrates interesting results regarding air-pollution, population, car ownership, 
+etc. All of this is done through associations in data pairings.</p>
+
 UX
 Using the latest dataset sourced from [.gov.uk](https://www.gov.uk/government/statistical-data-sets) a user can find out information relating to the city of London. The user is a typical Londoner with an interest in a sustainable lifestyle for themselves and others. Commuting to work using public transportation, having access to a section of the city but curious about other parts of the city too. Anything from knowing which borough is the most populated, which is the largest in surface area and the correlation between car numbers and emissions.   
 Objectives:
