@@ -29,7 +29,7 @@ to work by bicycle and his wife drives a car to work in the centre of London.
 
 
 **Wireframe**
-* Please find the wireframe sketch [here:](dashboard/mileStoneProject/wireframe/dashboard.jpg) 
+* Please find the wireframe sketch [here:](dashboard.jpg) 
 * The dashboard is responsive to an extent but not developed for mobile use. 
 
 **Look & Style**
